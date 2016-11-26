@@ -43,7 +43,7 @@ excerpt: {{ media.description if media.description else "" }}
       </div>
 
       <div style="text-align: center;" class="twelve columns">
-        {{ media.description }} {% if settings.keep_orig %}<a href="original/{{ media.filename }}">[Original photo]</a>{% endif %}
+        {{ media.description if media.description else media.title }} {% if settings.keep_orig %}<a href="original/{{ media.filename }}">[Original photo]</a>{% endif %}
       </div>
   {% endif %}
 
