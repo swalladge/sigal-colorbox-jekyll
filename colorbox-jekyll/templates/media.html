@@ -5,7 +5,7 @@
 layout: main
 title: {{ media_title }}
 permalink: /:path/:basename.html
-image: <img class="search-image" src="{{ settings.dest_url }}{{ album.url }}{{ media.thumbnail }}" width="{{ settings.thumb_size[0]//2 }}" height="{{ settings.thumb_size[1]//2 }}"/>
+image: <img class="search-image" src="/gallery/{{ settings.dest_url }}{{ album.url }}{{ media.thumbnail }}" width="{{ settings.thumb_size[0]//2 }}" height="{{ settings.thumb_size[1]//2 }}"/>
 excerpt: {{ media.description if media.description else "" }}
 ---
 {% endblock %}
