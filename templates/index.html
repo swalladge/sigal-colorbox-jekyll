@@ -21,6 +21,12 @@ exclude_from_search: true
     {% endif %}
   </header>
 
+  {% if album.description %}
+  <div id="description" class="row">
+    {{ album.description }}
+  </div>
+  {% endif %}
+
   {% set numbers = ["zero", "one", "two", "three", "four", "five", "six",
   "seven", "eight", "nine", "ten", "eleven", "twelve"] %}
   {% set column_size = settings.colorbox_column_size %}
@@ -110,11 +116,6 @@ exclude_from_search: true
   </div>
   {% endif %}
 
-  {% if album.description %}
-  <div id="description" class="row">
-    {{ album.description }}
-  </div>
-  {% endif %}
 {% endblock %}
 
 {% block footer %}

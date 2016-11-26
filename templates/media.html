@@ -41,6 +41,10 @@ excerpt: {{ media.description if media.description else "" }}
         </video>
       {% endif %}
       </div>
+
+      <div style="text-align: center;" class="twelve columns">
+        {{ media.description }} {% if settings.keep_orig %}<a href="original/{{ media.filename }}">[Original photo]</a>{% endif %}
+      </div>
   {% endif %}
 
   <div class="two columns offset-by-four">
@@ -56,4 +60,5 @@ excerpt: {{ media.description if media.description else "" }}
     <a href="{{ next_media.filename }}.html">next »</a>
     {% endif %}
   </div>
+
 {% endblock %}
