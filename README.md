@@ -5,7 +5,7 @@ Copyright © 2016 Samuel Walladge
 ## About
 
 This is an alternate theme for the [Sigal](https://github.com/saimn/sigal) static photo gallery generator.
-It's designed to integrate with a [Jekyll]() static website. Built on the original Sigal colorbox theme, it adds things
+It's designed to integrate with a [Jekyll](http://jekyllrb.com/) static website. Built on the original Sigal colorbox theme, it adds things
 like frontmatter so it can be dropped straight into a subdir in the source directory of a jekyll website to be built.
 
 
