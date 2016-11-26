@@ -118,7 +118,7 @@ exclude_from_search: true
 {% endblock %}
 
 {% block footer %}
-  {% if album.medias %}
+  {% if album.medias and False %} {# Note: disabled the actual colorbox at the moment #}
   <script>!window.jQuery && document.write(unescape('%3Cscript src="{{ theme.url }}/js/jquery-2.2.1.min.js"%3E%3C/script%3E'))</script>
   <script src="{{ theme.url }}/js/jquery.colorbox.min.js"></script>
   <script src="{{ theme.url }}/js/jquery.touchSwipe.min.js"></script>
