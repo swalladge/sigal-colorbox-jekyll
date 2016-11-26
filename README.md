@@ -1,4 +1,4 @@
-# sigal-colorbox-jekyll
+# sigal-jekyll
 
 Copyright © 2016 Samuel Walladge
 
@@ -8,6 +8,8 @@ This is an alternate theme for the [Sigal](https://github.com/saimn/sigal) stati
 It's designed to integrate with a [Jekyll](http://jekyllrb.com/) static website. Built on the original Sigal colorbox theme, it adds things
 like frontmatter so it can be dropped straight into a subdir in the source directory of a jekyll website to be built.
 
+It has been heavily modified from the colorbox theme, with all javascript parts removed. I want to only support a
+separate page for each image to integrate with lunr js search.
 
 ## License
 
