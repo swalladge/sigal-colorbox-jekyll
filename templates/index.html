@@ -13,6 +13,7 @@ exclude_from_search: true
   <header>
     {% if album.breadcrumb %}
     <h2>
+      <a href="{{ settings.gallery_path }}">{{ settings.title }}</a> »
       {% for url, title in album.breadcrumb %}
       <a href="{{ url }}">{{ title }}</a>{% if not loop.last %} » {% endif %}
       {% endfor -%}

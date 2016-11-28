@@ -13,6 +13,7 @@ excerpt: {{ media.description if media.description else "" }}
   <header>
     {% if album.breadcrumb %}
     <h2>
+      <a href="{{ settings.gallery_path }}">{{ settings.title }}</a> »
       {% for url, title in album.breadcrumb %}
       <a href="{{ url }}">{{ title }}</a> »
       {% endfor -%}
@@ -43,8 +44,17 @@ excerpt: {{ media.description if media.description else "" }}
       </div>
 
       <div style="text-align: center;" class="twelve columns">
-        {{ media.description if media.description else media.title }} {% if settings.keep_orig %}<a href="original/{{ media.filename }}">[Original photo]</a>{% endif %}
+        <h3>
+          {{ media.title }} {% if settings.keep_orig %}<small><a href="original/{{ media.filename }}">[Original photo]</a></small>{% endif %}
+        </h3>
       </div>
+
+      {% if media.description %}
+      <div style="text-align: center;" class="twelve columns">
+        {{ media.description }}
+      </div>
+      {% endif %}
+
   {% endif %}
 
   <div class="two columns offset-by-four">
