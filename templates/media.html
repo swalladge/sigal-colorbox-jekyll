@@ -47,6 +47,10 @@ excerpt: {{ media.description if media.description else "" }}
         <h3>
           {{ media.title }} {% if settings.keep_orig %}<small><a href="original/{{ media.filename }}">[Original photo]</a></small>{% endif %}
         </h3>
+        {% if media.meta.author %}
+        <h4>Author: {{ media.meta.author[0] }}</h4>
+        {% endif %}
+
       </div>
 
       {% if media.description %}
